@@ -59,4 +59,12 @@ function failed() {
 }
 function toClipboard(selector) {
 	document.querySelector("#share").innerText = location.hostname+`?ranking=1&sec=${seconds}&ms=${ms}`
+	let element = document.querySelector(selector);
+	let temp = document.createElement('input');
+	document.body.append(temp);
+	temp.value = element.textContent;
+	temp.select();
+	document.execCommand('copy');
+	temp.remove();
+	// fixed toClipBoard
 }
