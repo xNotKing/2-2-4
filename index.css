@@ -1,0 +1,110 @@
+* {
+    margin: auto;
+    padding: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 16px;
+	font-weight: 600;
+    padding-bottom: 20px;
+    min-width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+p {
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    display: block;
+    text-align: start;
+}
+.container {
+    text-align: start;
+    width: 90%;
+    max-width: 1300px;
+    padding: 0 16px;
+}
+nav {
+    height: 40px;
+    z-index: 99999;
+}
+nav .fab{
+    margin-top: 27px;
+    color: #00acee;
+    font-size: 24px;
+}
+nav .fab {
+    float: right;
+}
+.logo {
+    margin-top: -20px;
+    margin-left: -25px;
+	object-fit: contain;
+	width: auto;
+    height: 120px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.logo:hover {
+	transform: scale(1.1);
+}
+@media (max-width: 300px) {
+    nav .fab{
+        display: none;
+    }
+}
+.content {
+	text-align: center;
+    margin-top: 50px;
+}
+.sec-title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 20px;
+	font-weight: 800;
+    display: block;
+}
+.question {
+	border-radius: 7px;
+	width: 80vw;
+	max-width: 380px;
+	padding: 16px;
+	background: #f3f3f3;
+}
+#start-btn {
+	width: 80vw;
+	max-width: 280px;
+	height: 40px;
+	margin-top: 10px;
+	background: #fafafa;
+	border: 0.3px solid black;
+	cursor: pointer;
+	transition: 0.25s;
+	font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 16px;
+	font-weight: 600;
+	padding: 8px;
+}
+.question button {
+	width: 100%;
+	min-height: 40px;
+	padding: 8px;
+	margin-top: 10px;
+	background: #fafafa;
+	border: 0.3px solid black;
+	cursor: pointer;
+	transition: 0.25s;
+	font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 16px;
+	font-weight: 600;
+}
+.question button:hover {
+	color: #fff;
+	background: #6b62ef;
+}
+.question {
+	display: none;
+}

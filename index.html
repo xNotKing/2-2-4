@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xnotkingdev | 2 + 2 = 4</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="cat.jpg" type="image/x-icon">
+	<script src="game.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/e4d71b6741.js" crossorigin="anonymous" defer></script>
+	<meta name="og:title" content="xnotkingdev">
+    <meta name="og:description" content="Hola soy xnotkingdev_ un desarollador web con mas de 1 año de experiencia enfocado a la web.">
+	<meta name="og:image" content="logo.png">
+    <meta name="theme-color" content="#a2703f">
+    <meta name="keywords" content="build your site, xnotking, xnotkingdev_, xnotkingdev, website developer, site developer, solarcraft, arduino, cafeluna, luna cafe, developers with 1 year or more of experience, hugo, php, laravel, wordpress, nodejs, typescript, bun, bun.sh, html, css, js, html css js, dev">
+    <meta name="title" content="xnotkingdev">
+    <meta name="description" content="Hola soy xnotkingdev_ un desarollador web con mas de 1 año de experiencia enfocado a la web.">
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <img src="logo.png" class="logo" onclick="location.href = 'https://xnotking.github.io'" decoding="async" alt="logo">
+            <!-- <a href="https://twitter.com/xnotkingdev_" target="_blank" title="Mi twitter"><i class="fab fa-twitter fa"></i></a> -->
+        </nav>
+        <div class="content">
+			<h1>2 + 2 = 4</h1>
+            <h3 class="sec-title">Cuanto es...</h3>
+			<button id="start-btn">Empezar</button>
+            <article class="blogs">
+				<div class="question first" id="1">
+					2 + 2 equivale a
+					<button class="option" onclick="failed()">3.99</button>
+					<button class="option" onclick="correct(1)">4</button>
+				</div>
+				<div class="question second">
+					2 * 2 equivale a
+					<button class="option" onclick="correct(2)">4</button>
+					<button class="option" onclick="failed()">4.0000000000004</button>
+				</div>
+				<div class="question third" id="3">
+					√5 (raiz de 5) equivale a
+					<button class="option" onclick="correct(3)">2.2360679755</button>
+					<button class="option"  onclick="failed()">2.2460679755</button>
+				</div>
+				<div class="question fourth" id="4">
+					5 * (5 + 5) * 3 equivale a
+					<button class="option" onclick="correct(4)">150</button>
+					<button class="option" onclick="failed()">47</button>
+				</div>
+				<div class="question fifth" id="5">
+					π = PI
+					<br>(π * π) equivale a
+					<button class="option" onclick="correct(5)">9.869604401089358</button>
+					<button class="option" onclick="failed()">9.869004401089358</button>
+				</div>
+				<div class="question sixth" id="6">
+					9.42477796076938 equivale a
+					<button class="option" onclick="failed()">π (PI) * 2</button>
+					<button class="option" onclick="correct(6)">π (PI) * 3</button>
+				</div>
+				<div class="question done">
+					Has completado el test!<br>
+					En <span class="secondsDone">loading</span> segundos
+					<button onclick='toClipboard("#share")' id="share">Compartir</button>
+					<button onclick="location.href = '/'">Rehacer</button>
+				</div>
+				<div class="question failed">
+					Has fallado!<br>
+					<button onclick="location.href = '/'">Reintentar</button>
+				</div>
+            </article>
+        </div>
+	</main>
+</body>
+</html>
