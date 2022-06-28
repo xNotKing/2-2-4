@@ -58,7 +58,7 @@ function failed() {
 	document.querySelector(".failed").style.display = "block"
 }
 function toClipboard(selector) {
-	document.querySelector("#share").innerText = location.hostname+`?ranking=1&sec=${seconds}&ms=${ms}`
+	document.querySelector("#share").innerText = location.hostname+`/2-2-4/?ranking=1&sec=${seconds}&ms=${ms}`
 	let element = document.querySelector(selector);
 	let temp = document.createElement('input');
 	document.body.append(temp);
