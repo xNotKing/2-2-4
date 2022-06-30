@@ -15,12 +15,12 @@ document.querySelector("#start-btn").addEventListener("click", () => {
 	document.querySelector(".first").style.display = "block"
 	document.querySelector("#start-btn").style.display = "none"
 	setInterval(() => {
-		if (document.querySelector(".done").style.display != "none") {
+		if (document.querySelector(".done").style.display != "block") {
 			seconds++
 		}
 	}, 1000);
 	setInterval(() => {
-		if (document.querySelector(".done").style.display != "none") {
+		if (document.querySelector(".done").style.display != "block") {
 			ms++
 		}
 	}, 100);
