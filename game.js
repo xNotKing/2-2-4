@@ -4,7 +4,7 @@ let url = new URL(location.href)
 const urlParams = new URLSearchParams(url.search);
 if (urlParams.get("ranking") == 1) {
 	seconds = urlParams.get("sec")
-	ms = urlParams.get("ms").slice(-1)
+	ms = urlParams.get("ms")
 	document.querySelector("#start-btn").style.display = "none"
 	document.querySelector(".done").style.display = "block"
 	document.querySelector(`.secondsDone`).innerText = `${seconds}.${ms}`
