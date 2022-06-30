@@ -15,10 +15,14 @@ document.querySelector("#start-btn").addEventListener("click", () => {
 	document.querySelector(".first").style.display = "block"
 	document.querySelector("#start-btn").style.display = "none"
 	setInterval(() => {
-		seconds++
+		if (document.querySelector(".done").style.display != "none") {
+			seconds++
+		}
 	}, 1000);
 	setInterval(() => {
-		ms++
+		if (document.querySelector(".done").style.display != "none") {
+			ms++
+		}
 	}, 100);
 })
 function correct(number) {
